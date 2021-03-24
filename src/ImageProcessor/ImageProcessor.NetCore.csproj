@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ImageProcessor</AssemblyName>
+    <RootNamespace>ImageProcessor</RootNamespace>
+    <PackageProjectUrl>http://imageprocessor.org/</PackageProjectUrl>
+    <Version>4.0.0</Version>
+    <Copyright>James Jackson-South</Copyright>
+    <Description>Image Processor is an easy to use and extend processing library written in C#. Its fluent API makes common imaging tasks very simple to perform.
+     
+     Methods include; Resize, Rotate, Rounded Corners, Flip, Crop, Watermark, Filter, Saturation, Brightness, Contrast, Quality, Format, Vignette, Gaussian Blur, Gaussian Sharpen, and Transparency.
+     
+     If you use ImageProcessor please get in touch on my twitter @james_m_south.
+     
+     Feedback is always welcome.</Description>
+    <RepositoryUrl>https://github.com/JimBobSquarePants/ImageProcessor</RepositoryUrl>
+    <PackageTags>Image Resize Crop Rotate Quality Watermark Gif Jpg Jpeg Bitmap Png Tiff Fluent Animated EXIF</PackageTags>
+    <PackageReleaseNotes>.Net Core</PackageReleaseNotes>
+    <Authors>James Jackson-South</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Icon\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

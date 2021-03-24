@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ImageProcessor.Plugins.WebP</AssemblyName>
+    <RootNamespace>ImageProcessor.Plugins.WebP</RootNamespace>
+    <Copyright>James Jackson-South</Copyright>
+    <Authors>James Jackson-South</Authors>
+    <Version>2.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Adds support to ImageProcessor for the WebP image format.
+
+     If you use ImageProcessor please get in touch via my twitter @james_m_south
+
+     Feedback is always welcome</Description>
+    <PackageProjectUrl>http://imageprocessor.org/</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/JimBobSquarePants/ImageProcessor</RepositoryUrl>
+    <PackageReleaseNotes>.Net Core</PackageReleaseNotes>
+    <PackageTags>Image Resize Crop Rotate Quality Watermark Gif Jpg Jpeg Bitmap Png Tiff WebP</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Icon\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageProcessor\ImageProcessor.NetCore.csproj" />
+  </ItemGroup>
+
+</Project>
