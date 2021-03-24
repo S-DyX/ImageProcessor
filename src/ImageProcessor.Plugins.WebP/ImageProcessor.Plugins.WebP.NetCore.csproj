@@ -15,11 +15,12 @@
 
      Feedback is always welcome</Description>
     <PackageProjectUrl>http://imageprocessor.org/</PackageProjectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JimBobSquarePants/ImageProcessor</RepositoryUrl>
     <PackageReleaseNotes>.Net Core</PackageReleaseNotes>
     <PackageTags>Image Resize Crop Rotate Quality Watermark Gif Jpg Jpeg Bitmap Png Tiff WebP</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageId>ImageProcessor.Plugins.WebP</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

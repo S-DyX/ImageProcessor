@@ -18,7 +18,7 @@
     <PackageTags>Image Resize Crop Rotate Quality Watermark Gif Jpg Jpeg Bitmap Png Tiff Fluent Animated EXIF</PackageTags>
     <PackageReleaseNotes>.Net Core</PackageReleaseNotes>
     <Authors>James Jackson-South</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIcon>icon.png</PackageIcon>
